@@ -33,10 +33,13 @@ export const Navbar = () => {
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2">
-          <div className="w-8 h-8 rounded-md bg-gradient-to-br from-[#895129] to-[#E08543] flex items-center justify-center font-bold text-xs text-[#FAF9F6]">
-            G
+        <Link href="/" className="flex items-center space-x-3 group">
+          <div className="relative w-10 h-10 overflow-hidden rounded-lg border border-[#895129]/30 bg-[#3D2412]/50 group-hover:border-[#E08543] transition-colors duration-200">
+            <img
+              src="/logo.png"
+              alt="GenAI BMSIT Logo"
+              className="w-full h-full object-contain"
+            />
           </div>
           <span className="text-xl font-bold tracking-tight text-[#FAF9F6]">
             GEN<span className="text-[#E08543]">-AI</span>

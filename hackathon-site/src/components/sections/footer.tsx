@@ -40,13 +40,17 @@ export const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-md bg-gradient-to-br from-[#895129] to-[#E08543] flex items-center justify-center font-bold text-xs text-[#FAF9F6]">
-              G
-            </div>
-            <span className="text-xl font-black text-[#FAF9F6]">
-              GEN<span className="text-[#E08543]">-AI</span>
-            </span>
+            <Link href="/" className="flex items-center gap-3 mb-4 group">
+              <div className="relative w-10 h-10 overflow-hidden rounded-lg border border-[#663C1F] bg-[#3D2412]/50 group-hover:border-[#895129] transition-colors duration-200">
+                <img
+                  src="/logo.png"
+                  alt="GenAI BMSIT Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <span className="text-xl font-black text-[#FAF9F6]">
+                GEN<span className="text-[#E08543]">-AI</span>
+              </span>
             </Link>
             <p className="text-sm text-[#FAF9F6]/50 leading-relaxed mb-6">
               A hackathon for builders who believe AI should work in the real world — not just in notebooks.
