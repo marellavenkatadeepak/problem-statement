@@ -36,10 +36,10 @@ export const Navbar = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
           <div className="w-8 h-8 rounded-md bg-gradient-to-br from-[#895129] to-[#E08543] flex items-center justify-center font-bold text-xs text-[#FAF9F6]">
-            AI
+            G
           </div>
           <span className="text-xl font-bold tracking-tight text-[#FAF9F6]">
-            RESOLVE<span className="text-[#E08543]">.AI</span>
+            GEN<span className="text-[#E08543]">-AI</span>
           </span>
         </Link>
 

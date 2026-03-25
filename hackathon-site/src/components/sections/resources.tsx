@@ -17,7 +17,7 @@ const coreResources: Resource[] = [
   { title: "Hugging Face Hub", description: "Explore thousands of open-source models, datasets, and spaces.", link: "https://huggingface.co" },
 ];
 
-const GITHUB_CLASSROOM = "https://classroom.github.com/classrooms/267862973-inmodel-labs-classroom";
+const GITHUB_CLASSROOM = "https://classroom.github.com/a/1Fgu3-bk";
 
 const trackResources: { category: string; items: Resource[] }[] = [
   {

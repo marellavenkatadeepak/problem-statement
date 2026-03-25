@@ -42,11 +42,11 @@ export const Footer = () => {
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 rounded-md bg-gradient-to-br from-[#895129] to-[#E08543] flex items-center justify-center font-bold text-xs text-[#FAF9F6]">
-                AI
-              </div>
-              <span className="text-xl font-black text-[#FAF9F6]">
-                RESOLVE<span className="text-[#E08543]">.AI</span>
-              </span>
+              G
+            </div>
+            <span className="text-xl font-black text-[#FAF9F6]">
+              GEN<span className="text-[#E08543]">-AI</span>
+            </span>
             </Link>
             <p className="text-sm text-[#FAF9F6]/50 leading-relaxed mb-6">
               A hackathon for builders who believe AI should work in the real world — not just in notebooks.
@@ -92,7 +92,7 @@ export const Footer = () => {
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-[#663C1F]/50 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#FAF9F6]/35">
-          <p>© 2025 RESOLVE.AI Hackathon. All rights reserved.</p>
+          <p>© 2025 GEN-AI Hackathon. All rights reserved.</p>
           <p>
             Built on real problems.{" "}
             <span className="text-[#E08543]">Ship real solutions.</span>
