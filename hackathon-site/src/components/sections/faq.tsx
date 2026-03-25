@@ -91,8 +91,8 @@ export const FAQSection = () => {
           </h2>
           <p className="text-[#FAF9F6]/55">
             Anything not covered here? Email us at{" "}
-            <a href="mailto:hello@resolve.ai" className="text-[#E08543] underline">
-              hello@resolve.ai
+            <a href="mailto:hello@gen-ai.com" className="text-[#E08543] underline">
+              hello@gen-ai.com
             </a>
           </p>
         </motion.div>

@@ -28,7 +28,7 @@ const footerLinks = [
       { label: "Discord", href: "#" },
       { label: "Twitter / X", href: "#" },
       { label: "LinkedIn", href: "#" },
-      { label: "Contact Us", href: "mailto:hello@resolve.ai" },
+      { label: "Contact Us", href: "mailto:hello@gen-ai.com" },
     ],
   },
 ];
@@ -56,7 +56,7 @@ export const Footer = () => {
                 { icon: GitBranch, href: "https://github.com", label: "GitHub" },
                 { icon: Share2, href: "#", label: "Twitter" },
                 { icon: Link2, href: "#", label: "LinkedIn" },
-                { icon: Mail, href: "mailto:hello@resolve.ai", label: "Email" },
+                { icon: Mail, href: "mailto:hello@gen-ai.com", label: "Email" },
               ].map((s) => (
                 <a
                   key={s.label}
