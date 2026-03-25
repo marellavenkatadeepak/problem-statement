@@ -62,7 +62,7 @@ export const GithubSection = () => {
             <motion.a
               key={repo.title}
               href={repo.link}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -95,7 +95,7 @@ export const GithubSection = () => {
           <Link
             id="github-cta"
             href="https://github.com"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#895129] text-[#FAF9F6] font-bold hover:bg-[#E08543] transition-all shadow-xl shadow-[#895129]/20 hover:scale-105 duration-200"
           >

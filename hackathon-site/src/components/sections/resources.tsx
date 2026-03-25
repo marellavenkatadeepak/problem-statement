@@ -53,7 +53,7 @@ const trackResources: { category: string; items: Resource[] }[] = [
 const ResourceCard = ({ resource }: { resource: Resource }) => (
   <a
     href={resource.link}
-    target="_blank"
+    target="_blank" rel="noopener noreferrer"
     rel="noopener noreferrer"
     className="group flex items-start gap-3 p-5 rounded-xl border border-[#663C1F] bg-[#3D2412] hover:bg-[#663C1F]/30 hover:border-[#895129] transition-all duration-200"
   >
@@ -90,7 +90,7 @@ export const ResourcesSection = () => {
         {/* GitHub Classroom Join Banner */}
         <motion.a
           href={GITHUB_CLASSROOM}
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
           rel="noopener noreferrer"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

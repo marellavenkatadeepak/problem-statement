@@ -59,7 +59,7 @@ export const Navbar = () => {
           ))}
           <Link
             href="https://github.com"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             className="p-2 rounded-full border border-[#663C1F] hover:bg-[#663C1F]/30 transition-all"
             aria-label="GitHub"
           >

@@ -98,7 +98,7 @@ export const SubmissionSection = () => {
           <p className="text-[#FAF9F6]/55 mb-8">Registration is free. Bring your team, your tools, and your ambition.</p>
           <a
             href="https://classroom.github.com/a/1Fgu3-bk"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#895129] text-[#FAF9F6] font-bold hover:bg-[#E08543] transition-all shadow-xl hover:scale-105 duration-200"
           >
