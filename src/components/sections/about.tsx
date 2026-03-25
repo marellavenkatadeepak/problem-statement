@@ -40,7 +40,7 @@ export const AboutSection = () => {
           className="text-center mb-20"
         >
           <span className="inline-block text-xs uppercase tracking-widest text-[#E08543] mb-4 font-semibold">
-            What is RESOLVE.AI?
+            What is GEN-AI?
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-[#FAF9F6] mb-6 leading-tight">
             AI That Solves Real Problems
