@@ -29,6 +29,8 @@ const footerLinks = [
       { label: "Twitter / X", href: "#" },
       { label: "LinkedIn", href: "#" },
       { label: "Contact Us", href: "mailto:hello@gen-ai.com" },
+      { label: "Ranjith N: 79752 86267", href: "tel:7975286267" },
+      { label: "K H Pradyumna: 9606171082", href: "tel:9606171082" },
     ],
   },
 ];
@@ -59,7 +61,7 @@ export const Footer = () => {
               {[
                 { icon: GitBranch, href: "https://github.com", label: "GitHub" },
                 { icon: Share2, href: "#", label: "Twitter" },
-                { icon: Link2, href: "#", label: "LinkedIn" },
+                { icon: Link2, href: "https://in.linkedin.com/company/gen-ai-bmsit", label: "LinkedIn" },
                 { icon: Mail, href: "mailto:hello@gen-ai.com", label: "Email" },
               ].map((s) => (
                 <a
