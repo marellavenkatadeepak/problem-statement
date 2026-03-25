@@ -70,7 +70,7 @@ export const HeroSection = () => {
       >
         {[
           { label: "Problem Tracks", value: "10+" },
-          { label: "Duration", value: "1 Day" },
+          { label: "Duration", value: "10 Days" },
           { label: "Focus Area", value: "Real World AI" },
         ].map((s) => (
           <div key={s.label} className="flex flex-col">

@@ -14,7 +14,7 @@ const steps = [
     icon: Wrench,
     step: "02",
     title: "Build",
-    desc: "48 hours to design, develop, and test your AI system. Use any open-source stack.",
+    desc: "10 Days to design, develop, and test your AI system. Use any open-source stack.",
   },
   {
     icon: Upload,
