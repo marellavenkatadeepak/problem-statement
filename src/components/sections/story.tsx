@@ -104,7 +104,7 @@ export const StorySection = () => {
           <blockquote className="text-2xl md:text-3xl font-bold text-[#FAF9F6] max-w-3xl mx-auto">
             "An AI that can't be deployed is just a very expensive research paper."
           </blockquote>
-          <p className="mt-3 text-[#E08543] font-semibold">— The RESOLVE.AI Manifesto</p>
+          <p className="mt-3 text-[#E08543] font-semibold">— THE GEN-AI MANIFESTO</p>
         </motion.div>
       </div>
     </section>
