@@ -9,6 +9,7 @@ const criteria = [
   { name: "Integration", score: 15, desc: "How well does the system connect external data, APIs, and services?" },
   { name: "Demo Quality", score: 10, desc: "Is the demo polished, clear, and reproducible?" },
   { name: "Innovation", score: 10, desc: "Novel approach? Surprising application? Creative architecture?" },
+  { name: "GitHub Classroom Bonus", score: 10, desc: "Bonus points for correct assignment submission and repository structure." },
 ];
 
 export const JudgingSection = () => {
@@ -29,7 +30,7 @@ export const JudgingSection = () => {
             How We Judge
           </h2>
           <p className="text-[#FAF9F6]/55 max-w-xl mx-auto">
-            100 points total. We weigh real-world usefulness and technical rigor above all else.
+            100 points + 10 Bonus points total. We weigh real-world usefulness and technical rigor above all else.
           </p>
         </motion.div>
 
