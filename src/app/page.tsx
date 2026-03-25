@@ -1,3 +1,7 @@
+"use client";
+import React, { useState, useEffect } from "react";
+import { AnimatePresence } from "framer-motion";
+import { LoadingScreen } from "@/components/loading-screen";
 import { Navbar } from "@/components/navbar";
 import { HeroSection } from "@/components/sections/hero";
 import { AboutSection } from "@/components/sections/about";
@@ -11,19 +15,29 @@ import { FAQSection } from "@/components/sections/faq";
 import { Footer } from "@/components/sections/footer";
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+
   return (
-    <main>
-      <Navbar />
-      <HeroSection />
-      <AboutSection />
-      <TracksSection />
-      <StorySection />
-      <ResourcesSection />
-      <GithubSection />
-      <JudgingSection />
-      <SubmissionSection />
-      <FAQSection />
-      <Footer />
-    </main>
+    <>
+      <AnimatePresence mode="wait">
+        {loading && <LoadingScreen onComplete={() => setLoading(false)} />}
+      </AnimatePresence>
+      
+      {!loading && (
+        <main>
+          <Navbar />
+          <HeroSection />
+          <AboutSection />
+          <TracksSection />
+          <StorySection />
+          <ResourcesSection />
+          <GithubSection />
+          <JudgingSection />
+          <SubmissionSection />
+          <FAQSection />
+          <Footer />
+        </main>
+      )}
+    </>
   );
 }
