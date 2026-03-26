@@ -15,12 +15,12 @@ type Track = {
 const tracks: Track[] = [
   // Flagship
   {
-    title: "Traffic Light Optimization (Govt AI)",
+    title: "Healthcare",
     description:
-      "Design an AI system that dynamically adjusts traffic light sequences using real-time vehicle flow data to reduce congestion and emergency vehicle delays.",
+      "Build an agentic AI system that can monitor patient health data in real time, detect anomalies, recommend interventions, and autonomously coordinate with healthcare providers while continuously learning from outcomes to improve decision-making.",
     difficulty: "Flagship",
-    expectedOutput: "A simulation or real dashboard with adaptive signal control using CV/RL.",
-    whyItMatters: "Urban mobility failures cost billions annually. Smart signals save lives and time.",
+    expectedOutput: "A real-time patient monitoring dashboard with anomaly detection, intervention recommendations, and provider coordination workflows driven by an agentic AI.",
+    whyItMatters: "Timely detection of health anomalies and coordinated care can save lives — agentic AI makes this scalable and continuously improving.",
   },
   {
     title: "MCP-Based AI Work Assistant",
@@ -56,12 +56,12 @@ const tracks: Track[] = [
     whyItMatters: "Poorly targeted events waste time. Good ones drive real community value.",
   },
   {
-    title: "Queue Optimization",
+    title: "Technology",
     description:
-      "Model and optimize queuing systems in service environments (banks, hospitals, airports) using simulation and AI-driven scheduling.",
+      "Build an agentic AI system that can analyze codebases, identify bugs or inefficiencies, autonomously suggest fixes, test solutions, and iteratively improve code quality while integrating with developer tools and environments.",
     difficulty: "Advanced",
-    expectedOutput: "Simulation + optimization engine with measurable wait-time reduction.",
-    whyItMatters: "Long queues reduce efficiency, satisfaction, and revenue.",
+    expectedOutput: "An agentic coding assistant that autonomously detects issues, proposes and validates fixes, and integrates with developer workflows such as GitHub, CI/CD, and IDEs.",
+    whyItMatters: "Code quality bottlenecks cost engineering teams millions of hours — agentic AI that iteratively improves codebases can fundamentally change how software is built.",
   },
   // Foundation
   {
@@ -69,16 +69,16 @@ const tracks: Track[] = [
     description:
       "Build a customer churn prediction model with explainable outputs, actionable retention recommendations, and a simple front-end.",
     difficulty: "Foundation",
-    expectedOutput: "Classification model + feature importance + retention suggestions UI.",
+    expectedOutput: "Cltion change withassification model + feature importance + retention suggestions UI.",
     whyItMatters: "Retaining one customer is 5x cheaper than acquiring a new one.",
   },
   {
-    title: "Smart Reminder",
+    title: "Agriculture",
     description:
-      "Create an AI reminder system that understands natural language, learns user patterns, and sends context-aware nudges at the right moment.",
+      "Build an agentic AI system that can analyze weather, soil, and crop data to predict risks, recommend actions, and autonomously assist farmers in optimizing yield and minimizing losses through continuous adaptation.",
     difficulty: "Foundation",
-    expectedOutput: "Working app with NLP input and smart scheduling logic.",
-    whyItMatters: "Standard reminders are dumb. Context-aware ones actually help.",
+    expectedOutput: "A farmer-facing dashboard or app with real-time risk alerts, actionable recommendations, and adaptive planning powered by agentic AI.",
+    whyItMatters: "Agriculture feeds the world — agentic AI that helps farmers adapt to unpredictable conditions can prevent crop losses and improve food security.",
   },
   {
     title: "Form Filler",
