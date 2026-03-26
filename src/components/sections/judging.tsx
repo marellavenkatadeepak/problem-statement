@@ -14,7 +14,7 @@ const criteria = [
 
 export const JudgingSection = () => {
   return (
-    <section id="judging" className="py-28 px-6 bg-[#3D2412]">
+    <section id="judging" className="py-28 px-6 bg-[#0a0a0f]">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -23,7 +23,7 @@ export const JudgingSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
-          <span className="inline-block text-xs uppercase tracking-widest text-[#E08543] mb-4 font-semibold">
+          <span className="inline-block text-xs uppercase tracking-widest text-[#818cf8] mb-4 font-semibold">
             Evaluation
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-[#FAF9F6] mb-4">
@@ -42,24 +42,24 @@ export const JudgingSection = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="p-6 rounded-2xl border border-[#663C1F] bg-[#663C1F]/15 hover:bg-[#663C1F]/25 transition-all"
+              className="p-6 rounded-2xl border border-[#1e1b4b] bg-[#1e1b4b]/15 hover:bg-[#1e1b4b]/25 transition-all"
             >
               <div className="flex items-center justify-between mb-3">
                 <div>
                   <h3 className="font-bold text-[#FAF9F6]">{c.name}</h3>
                   <p className="text-sm text-[#FAF9F6]/50 mt-0.5">{c.desc}</p>
                 </div>
-                <span className="ml-4 text-2xl font-black text-[#E08543] shrink-0">{c.score}pts</span>
+                <span className="ml-4 text-2xl font-black text-[#818cf8] shrink-0">{c.score}pts</span>
               </div>
               {/* Progress bar */}
-              <div className="w-full h-1.5 bg-[#3D2412] rounded-full overflow-hidden">
+              <div className="w-full h-1.5 bg-[#0a0a0f] rounded-full overflow-hidden">
                 <motion.div
                   initial={{ width: 0 }}
                   whileInView={{ width: `${c.score}%` }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.8, delay: i * 0.1, ease: "easeOut" }}
                   className="h-full rounded-full"
-                  style={{ background: "linear-gradient(90deg, #895129, #E08543)" }}
+                  style={{ background: "linear-gradient(90deg, #4f46e5, #818cf8)" }}
                 />
               </div>
             </motion.div>

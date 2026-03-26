@@ -12,10 +12,10 @@ export const HeroSection = () => {
       id="hero"
       className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-6"
       style={{
-        background: "linear-gradient(135deg, #3D2412 0%, #4a2c17 30%, #663C1F 60%, #895129 100%)",
+        background: "linear-gradient(135deg, #0a0a0f 0%, #0f0f1a 30%, #1e1b4b 60%, #312e81 100%)",
       }}
     >
-      <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="#E08543" />
+      <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="#818cf8" />
       <BackgroundBeams />
 
       {/* Badge */}
@@ -23,9 +23,9 @@ export const HeroSection = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="relative z-10 mb-8 flex items-center gap-2 px-4 py-2 rounded-full border border-[#895129] bg-[#663C1F]/40 backdrop-blur-sm"
+        className="relative z-10 mb-8 flex items-center gap-2 px-4 py-2 rounded-full border border-[#4f46e5] bg-[#1e1b4b]/40 backdrop-blur-sm"
       >
-        <Code2 className="w-4 h-4 text-[#E08543]" />
+        <Code2 className="w-4 h-4 text-[#818cf8]" />
         <span className="text-sm font-medium text-[#FAF9F6]/80">
           AI Hackathon — Real Systems, Real Impact
         </span>
@@ -42,7 +42,7 @@ export const HeroSection = () => {
         <span className="relative">
           <span
             className="text-transparent bg-clip-text"
-            style={{ backgroundImage: "linear-gradient(90deg, #E08543, #895129, #E08543)" }}
+            style={{ backgroundImage: "linear-gradient(90deg, #818cf8, #4f46e5, #818cf8)" }}
           >
             That Actually Work
           </span>
@@ -74,7 +74,7 @@ export const HeroSection = () => {
           { label: "Focus Area", value: "Real World AI" },
         ].map((s) => (
           <div key={s.label} className="flex flex-col">
-            <span className="text-4xl font-black text-[#E08543]">{s.value}</span>
+            <span className="text-4xl font-black text-[#818cf8]">{s.value}</span>
             <span className="text-sm uppercase tracking-widest text-[#FAF9F6]/50 mt-1 font-semibold">{s.label}</span>
           </div>
         ))}
@@ -90,21 +90,21 @@ export const HeroSection = () => {
         <Link
           href="#register"
           id="cta-register"
-          className="flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#895129] text-[#FAF9F6] font-bold text-sm hover:bg-[#E08543] transition-all shadow-xl shadow-[#895129]/30 hover:scale-105 duration-200"
+          className="flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#16a34a] text-[#FAF9F6] font-bold text-sm hover:bg-[#22c55e] transition-all shadow-xl shadow-[#16a34a]/30 hover:scale-105 duration-200"
         >
           Register Now <ArrowRight className="w-4 h-4" />
         </Link>
         <Link
           href="#tracks"
           id="cta-tracks"
-          className="flex items-center gap-2 px-7 py-3.5 rounded-full border border-[#895129] text-[#FAF9F6] font-bold text-sm hover:bg-[#895129]/20 transition-all duration-200"
+          className="flex items-center gap-2 px-7 py-3.5 rounded-full border border-[#4f46e5] text-[#FAF9F6] font-bold text-sm hover:bg-[#4f46e5]/20 transition-all duration-200"
         >
           View Tracks
         </Link>
         <Link
           href="#resources"
           id="cta-resources"
-          className="flex items-center gap-2 px-7 py-3.5 rounded-full border border-[#663C1F] text-[#FAF9F6]/70 font-medium text-sm hover:bg-[#663C1F]/30 transition-all duration-200"
+          className="flex items-center gap-2 px-7 py-3.5 rounded-full border border-[#1e1b4b] text-[#FAF9F6]/70 font-medium text-sm hover:bg-[#1e1b4b]/30 transition-all duration-200"
         >
           Explore Resources
         </Link>

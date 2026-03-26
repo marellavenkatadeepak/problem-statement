@@ -37,13 +37,13 @@ const footerLinks = [
 
 export const Footer = () => {
   return (
-    <footer className="border-t border-[#663C1F] bg-[#2e1c0e] px-6 py-16">
+    <footer className="border-t border-[#1e1b4b] bg-[#050508] px-6 py-16">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-3 mb-4 group">
-              <div className="relative w-10 h-10 overflow-hidden rounded-lg border border-[#663C1F] bg-[#3D2412]/50 group-hover:border-[#895129] transition-colors duration-200">
+              <div className="relative w-10 h-10 overflow-hidden rounded-lg border border-[#1e1b4b] bg-[#0a0a0f]/50 group-hover:border-[#4f46e5] transition-colors duration-200">
                 <img
                   src="/logo.png"
                   alt="GenAI BMSIT Logo"
@@ -51,7 +51,7 @@ export const Footer = () => {
                 />
               </div>
               <span className="text-xl font-black text-[#FAF9F6]">
-                GEN<span className="text-[#E08543]">-AI</span>
+                GEN<span className="text-[#818cf8]">-AI</span>
               </span>
             </Link>
             <p className="text-sm text-[#FAF9F6]/50 leading-relaxed mb-6">
@@ -68,7 +68,7 @@ export const Footer = () => {
                   key={s.label}
                   href={s.href}
                   aria-label={s.label}
-                  className="w-9 h-9 rounded-full border border-[#663C1F] flex items-center justify-center text-[#FAF9F6]/50 hover:text-[#E08543] hover:border-[#895129] transition-all"
+                  className="w-9 h-9 rounded-full border border-[#1e1b4b] flex items-center justify-center text-[#FAF9F6]/50 hover:text-[#818cf8] hover:border-[#4f46e5] transition-all"
                 >
                   <s.icon size={16} />
                 </a>
@@ -79,7 +79,7 @@ export const Footer = () => {
           {/* Links */}
           {footerLinks.map((col) => (
             <div key={col.heading}>
-              <h4 className="text-xs uppercase tracking-widest text-[#E08543] font-bold mb-4">{col.heading}</h4>
+              <h4 className="text-xs uppercase tracking-widest text-[#818cf8] font-bold mb-4">{col.heading}</h4>
               <ul className="space-y-3">
                 {col.items.map((item) => (
                   <li key={item.label}>
@@ -97,11 +97,11 @@ export const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-8 border-t border-[#663C1F]/50 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#FAF9F6]/35">
+        <div className="pt-8 border-t border-[#1e1b4b]/50 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#FAF9F6]/35">
           <p>© 2025 GEN-AI Hackathon. All rights reserved.</p>
           <p>
             Built on real problems.{" "}
-            <span className="text-[#E08543]">Ship real solutions.</span>
+            <span className="text-[#818cf8]">Ship real solutions.</span>
           </p>
         </div>
       </div>

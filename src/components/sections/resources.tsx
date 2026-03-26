@@ -54,20 +54,19 @@ const ResourceCard = ({ resource }: { resource: Resource }) => (
   <a
     href={resource.link}
     target="_blank" rel="noopener noreferrer"
-    rel="noopener noreferrer"
-    className="group flex items-start gap-3 p-5 rounded-xl border border-[#663C1F] bg-[#3D2412] hover:bg-[#663C1F]/30 hover:border-[#895129] transition-all duration-200"
+    className="group flex items-start gap-3 p-5 rounded-xl border border-[#1e1b4b] bg-[#0a0a0f] hover:bg-[#1e1b4b]/30 hover:border-[#4f46e5] transition-all duration-200"
   >
     <div className="flex-1">
-      <p className="text-base font-bold text-[#FAF9F6] group-hover:text-[#E08543] transition-colors">{resource.title}</p>
+      <p className="text-base font-bold text-[#FAF9F6] group-hover:text-[#818cf8] transition-colors">{resource.title}</p>
       <p className="text-sm text-[#FAF9F6]/55 mt-1 leading-relaxed">{resource.description}</p>
     </div>
-    <ExternalLink className="w-4 h-4 text-[#FAF9F6]/30 group-hover:text-[#E08543] transition-colors shrink-0 mt-0.5" />
+    <ExternalLink className="w-4 h-4 text-[#FAF9F6]/30 group-hover:text-[#818cf8] transition-colors shrink-0 mt-0.5" />
   </a>
 );
 
 export const ResourcesSection = () => {
   return (
-    <section id="resources" className="py-28 px-6 bg-[#2e1c0e]">
+    <section id="resources" className="py-28 px-6 bg-[#050508]">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -76,7 +75,7 @@ export const ResourcesSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
-          <span className="inline-block text-xs uppercase tracking-widest text-[#E08543] mb-4 font-semibold">
+          <span className="inline-block text-xs uppercase tracking-widest text-[#818cf8] mb-4 font-semibold">
             Resources
           </span>
           <h2 className="text-5xl md:text-6xl font-black text-[#FAF9F6] mb-4">
@@ -91,23 +90,22 @@ export const ResourcesSection = () => {
         <motion.a
           href={GITHUB_CLASSROOM}
           target="_blank" rel="noopener noreferrer"
-          rel="noopener noreferrer"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="group mb-14 flex flex-col sm:flex-row items-center gap-5 p-7 rounded-2xl border-2 border-[#E08543]/60 bg-[#E08543]/10 hover:bg-[#E08543]/15 hover:border-[#E08543] transition-all duration-200"
+          className="group mb-14 flex flex-col sm:flex-row items-center gap-5 p-7 rounded-2xl border-2 border-[#16a34a]/60 bg-[#16a34a]/10 hover:bg-[#16a34a]/15 hover:border-[#22c55e] transition-all duration-200"
         >
           <div className="text-4xl">🎓</div>
           <div className="flex-1 text-center sm:text-left">
-            <p className="text-xl font-black text-[#FAF9F6] group-hover:text-[#E08543] transition-colors">
+            <p className="text-xl font-black text-[#FAF9F6] group-hover:text-[#22c55e] transition-colors">
               Join the GitHub Classroom
             </p>
             <p className="text-sm text-[#FAF9F6]/60 mt-1">
               All assignments, starter kits, and submission templates are in the Inmodel Labs Classroom. Accept your invite to get started.
             </p>
           </div>
-          <div className="flex items-center gap-2 px-6 py-3 rounded-full bg-[#895129] text-[#FAF9F6] font-bold text-sm whitespace-nowrap group-hover:bg-[#E08543] transition-all">
+          <div className="flex items-center gap-2 px-6 py-3 rounded-full bg-[#16a34a] text-[#FAF9F6] font-bold text-sm whitespace-nowrap group-hover:bg-[#22c55e] transition-all">
             Join Classroom →
           </div>
         </motion.a>
@@ -121,7 +119,7 @@ export const ResourcesSection = () => {
           className="mb-14"
         >
           <h3 className="text-xl font-black text-[#FAF9F6] mb-5 flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-[#E08543]" /> Core Resources
+            <span className="w-2 h-2 rounded-full bg-[#818cf8]" /> Core Resources
           </h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {coreResources.map((r) => (
@@ -141,7 +139,7 @@ export const ResourcesSection = () => {
               transition={{ duration: 0.5, delay: i * 0.1 }}
             >
               <h3 className="text-lg font-black text-[#FAF9F6] mb-4 flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-[#895129]" /> {cat.category}
+                <span className="w-2 h-2 rounded-full bg-[#4f46e5]" /> {cat.category}
               </h3>
               <div className="flex flex-col gap-3">
                 {cat.items.map((r) => (

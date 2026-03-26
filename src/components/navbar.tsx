@@ -28,13 +28,13 @@ export const Navbar = () => {
       className={cn(
         "fixed top-0 inset-x-0 z-50 transition-all duration-300 px-6 py-4",
         isScrolled
-          ? "bg-[#3D2412]/80 backdrop-blur-md border-b border-[#663C1F]/50 py-3"
+          ? "bg-[#0a0a0f]/80 backdrop-blur-md border-b border-[#1e1b4b]/50 py-3"
           : "bg-transparent"
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-3 group">
-          <div className="relative w-10 h-10 overflow-hidden rounded-lg border border-[#895129]/30 bg-[#3D2412]/50 group-hover:border-[#E08543] transition-colors duration-200">
+          <div className="relative w-10 h-10 overflow-hidden rounded-lg border border-[#4f46e5]/30 bg-[#0a0a0f]/50 group-hover:border-[#818cf8] transition-colors duration-200">
             <img
               src="/logo.png"
               alt="GenAI BMSIT Logo"
@@ -42,7 +42,7 @@ export const Navbar = () => {
             />
           </div>
           <span className="text-xl font-bold tracking-tight text-[#FAF9F6]">
-            GEN<span className="text-[#E08543]">-AI</span>
+            GEN<span className="text-[#818cf8]">-AI</span>
           </span>
         </Link>
 
@@ -52,7 +52,7 @@ export const Navbar = () => {
             <Link
               key={item.name}
               href={item.link}
-              className="text-sm font-medium text-[#FAF9F6]/70 hover:text-[#E08543] transition-colors duration-200"
+              className="text-sm font-medium text-[#FAF9F6]/70 hover:text-[#818cf8] transition-colors duration-200"
             >
               {item.name}
             </Link>
@@ -60,14 +60,14 @@ export const Navbar = () => {
           <Link
             href="https://github.com"
             target="_blank" rel="noopener noreferrer"
-            className="p-2 rounded-full border border-[#663C1F] hover:bg-[#663C1F]/30 transition-all"
+            className="p-2 rounded-full border border-[#1e1b4b] hover:bg-[#1e1b4b]/30 transition-all"
             aria-label="GitHub"
           >
             <GitBranch className="w-4 h-4 text-[#FAF9F6]" />
           </Link>
           <Link
             href="#register"
-            className="px-5 py-2 rounded-full bg-[#895129] text-[#FAF9F6] text-sm font-semibold hover:bg-[#E08543] transition-all shadow-lg shadow-[#895129]/20"
+            className="px-5 py-2 rounded-full bg-[#16a34a] text-[#FAF9F6] text-sm font-semibold hover:bg-[#22c55e] transition-all shadow-lg shadow-[#16a34a]/20"
           >
             Register Now
           </Link>
@@ -90,13 +90,13 @@ export const Navbar = () => {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="absolute top-full left-0 right-0 bg-[#3D2412] border-b border-[#663C1F] p-6 md:hidden flex flex-col space-y-4"
+            className="absolute top-full left-0 right-0 bg-[#0a0a0f] border-b border-[#1e1b4b] p-6 md:hidden flex flex-col space-y-4"
           >
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.link}
-                className="text-base font-medium text-[#FAF9F6]/90 hover:text-[#E08543]"
+                className="text-base font-medium text-[#FAF9F6]/90 hover:text-[#818cf8]"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}
@@ -104,7 +104,7 @@ export const Navbar = () => {
             ))}
             <Link
               href="#register"
-              className="mt-2 py-3 rounded-lg bg-[#895129] text-center text-[#FAF9F6] font-bold hover:bg-[#E08543] transition-colors"
+              className="mt-2 py-3 rounded-lg bg-[#16a34a] text-center text-[#FAF9F6] font-bold hover:bg-[#22c55e] transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Register Now

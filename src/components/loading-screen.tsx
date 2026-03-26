@@ -25,7 +25,7 @@ export const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
-      className="fixed inset-0 z-[100] bg-[#3D2412] flex flex-col items-center justify-center pointer-events-none"
+      className="fixed inset-0 z-[100] bg-[#0a0a0f] flex flex-col items-center justify-center pointer-events-none"
     >
       <div className="relative flex flex-col items-center">
         {/* Text Logo Animation */}
@@ -41,7 +41,7 @@ export const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
           }}
           className="relative flex flex-col items-center"
         >
-          <div className="absolute inset-0 bg-[#E08543]/10 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute inset-0 bg-[#818cf8]/10 rounded-full blur-3xl animate-pulse" />
           
           <motion.h1
             initial={{ y: 20, opacity: 0 }}
@@ -49,37 +49,37 @@ export const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-6xl md:text-8xl font-black text-[#FAF9F6] tracking-tighter flex items-center gap-2"
           >
-            GEN<span className="text-[#E08543]">-</span>AI
+            GEN<span className="text-[#818cf8]">-</span>AI
           </motion.h1>
           
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: "100%" }}
             transition={{ duration: 1.5, delay: 0.5, ease: "easeInOut" }}
-            className="h-[1px] bg-gradient-to-r from-transparent via-[#E08543] to-transparent mt-2"
+            className="h-[1px] bg-gradient-to-r from-transparent via-[#818cf8] to-transparent mt-2"
           />
 
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: [0, 1, 0.5] }}
             transition={{ duration: 2, repeat: Infinity, delay: 1 }}
-            className="text-[12px] uppercase tracking-[0.5em] text-[#E08543] font-bold mt-4"
+            className="text-[12px] uppercase tracking-[0.5em] text-[#818cf8] font-bold mt-4"
           >
             THE MANIFESTO
           </motion.p>
         </motion.div>
 
         {/* Progress Bar Container */}
-        <div className="mt-12 w-48 h-[2px] bg-[#663C1F]/30 rounded-full overflow-hidden">
+        <div className="mt-12 w-48 h-[2px] bg-[#1e1b4b]/30 rounded-full overflow-hidden">
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: `${progress}%` }}
-            className="h-full bg-gradient-to-r from-[#895129] to-[#E08543]"
+            className="h-full bg-gradient-to-r from-[#4f46e5] to-[#818cf8]"
           />
         </div>
         
         {/* Subtle background glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#895129]/10 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#4f46e5]/10 rounded-full blur-[120px] pointer-events-none" />
       </div>
     </motion.div>
   );

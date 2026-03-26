@@ -34,11 +34,11 @@ const narrative = [
 
 export const StorySection = () => {
   return (
-    <section id="story" className="py-28 px-6 bg-[#3D2412] relative overflow-hidden">
+    <section id="story" className="py-28 px-6 bg-[#0a0a0f] relative overflow-hidden">
       {/* Decorative background */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-80 h-80 bg-[#895129]/5 rounded-full blur-[100px]" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#E08543]/5 rounded-full blur-[120px]" />
+        <div className="absolute top-0 left-1/4 w-80 h-80 bg-[#4f46e5]/5 rounded-full blur-[100px]" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#818cf8]/5 rounded-full blur-[120px]" />
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto">
@@ -49,7 +49,7 @@ export const StorySection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <span className="inline-block text-xs uppercase tracking-widest text-[#E08543] mb-4 font-semibold">
+          <span className="inline-block text-xs uppercase tracking-widest text-[#818cf8] mb-4 font-semibold">
             The Story
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-[#FAF9F6] mb-4">
@@ -72,9 +72,9 @@ export const StorySection = () => {
             >
               {/* Connector line */}
               {i < narrative.length - 1 && (
-                <div className="hidden md:block absolute top-8 left-full w-full h-px border-t border-dashed border-[#663C1F] z-0" />
+                <div className="hidden md:block absolute top-8 left-full w-full h-px border-t border-dashed border-[#1e1b4b] z-0" />
               )}
-              <div className="relative z-10 p-7 rounded-2xl border border-[#663C1F] bg-[#663C1F]/15 hover:bg-[#663C1F]/25 hover:border-[#895129] transition-all duration-300">
+              <div className="relative z-10 p-7 rounded-2xl border border-[#1e1b4b] bg-[#1e1b4b]/15 hover:bg-[#1e1b4b]/25 hover:border-[#4f46e5] transition-all duration-300">
                 <div className="text-4xl mb-4">{item.emoji}</div>
                 <h3 className="text-lg font-black text-[#FAF9F6] mb-4">{item.heading}</h3>
                 <ul className="space-y-2">
@@ -83,7 +83,7 @@ export const StorySection = () => {
                       key={line}
                       className="flex items-start gap-2 text-sm text-[#FAF9F6]/60"
                     >
-                      <span className="mt-1 w-1.5 h-1.5 rounded-full bg-[#E08543] shrink-0" />
+                      <span className="mt-1 w-1.5 h-1.5 rounded-full bg-[#818cf8] shrink-0" />
                       {line}
                     </li>
                   ))}
@@ -104,7 +104,7 @@ export const StorySection = () => {
           <blockquote className="text-2xl md:text-3xl font-bold text-[#FAF9F6] max-w-3xl mx-auto">
             "An AI that can't be deployed is just a very expensive research paper."
           </blockquote>
-          <p className="mt-3 text-[#E08543] font-semibold">— THE GEN-AI MANIFESTO</p>
+          <p className="mt-3 text-[#818cf8] font-semibold">— THE GEN-AI MANIFESTO</p>
         </motion.div>
       </div>
     </section>

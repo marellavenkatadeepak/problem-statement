@@ -38,7 +38,7 @@ const steps = [
 
 export const SubmissionSection = () => {
   return (
-    <section id="submit" className="py-28 px-6 bg-[#2e1c0e]">
+    <section id="submit" className="py-28 px-6 bg-[#050508]">
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -47,7 +47,7 @@ export const SubmissionSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block text-xs uppercase tracking-widest text-[#E08543] mb-4 font-semibold">
+          <span className="inline-block text-xs uppercase tracking-widest text-[#818cf8] mb-4 font-semibold">
             Submission Flow
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-[#FAF9F6] mb-4">
@@ -61,7 +61,7 @@ export const SubmissionSection = () => {
         {/* Timeline */}
         <div className="relative">
           {/* Connector line */}
-          <div className="hidden md:block absolute top-8 left-0 right-0 h-px border-t border-dashed border-[#663C1F]" style={{ left: "10%", right: "10%" }} />
+          <div className="hidden md:block absolute top-8 left-0 right-0 h-px border-t border-dashed border-[#1e1b4b]" style={{ left: "10%", right: "10%" }} />
 
           <div className="grid md:grid-cols-5 gap-6">
             {steps.map((step, i) => (
@@ -74,10 +74,10 @@ export const SubmissionSection = () => {
                 className="flex flex-col items-center text-center"
               >
                 {/* Icon circle */}
-                <div className="relative z-10 w-16 h-16 rounded-full border-2 border-[#895129] bg-[#3D2412] flex items-center justify-center mb-4 hover:bg-[#895129]/30 hover:scale-110 transition-all duration-200">
-                  <step.icon className="w-7 h-7 text-[#E08543]" />
+                <div className="relative z-10 w-16 h-16 rounded-full border-2 border-[#4f46e5] bg-[#0a0a0f] flex items-center justify-center mb-4 hover:bg-[#4f46e5]/30 hover:scale-110 transition-all duration-200">
+                  <step.icon className="w-7 h-7 text-[#818cf8]" />
                 </div>
-                <span className="text-xs font-black text-[#E08543] tracking-widest mb-1">{step.step}</span>
+                <span className="text-xs font-black text-[#818cf8] tracking-widest mb-1">{step.step}</span>
                 <h3 className="text-base font-bold text-[#FAF9F6] mb-2">{step.title}</h3>
                 <p className="text-xs text-[#FAF9F6]/50 leading-relaxed">{step.desc}</p>
               </motion.div>
@@ -92,15 +92,14 @@ export const SubmissionSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="mt-16 p-10 rounded-2xl border border-[#895129]/40 bg-[#663C1F]/15 text-center"
+          className="mt-16 p-10 rounded-2xl border border-[#4f46e5]/40 bg-[#1e1b4b]/15 text-center"
         >
           <h3 className="text-3xl font-black text-[#FAF9F6] mb-3">Ready to Build Something Real?</h3>
           <p className="text-[#FAF9F6]/55 mb-8">Registration is free. Bring your team, your tools, and your ambition.</p>
           <a
             href="https://classroom.github.com/a/1Fgu3-bk"
             target="_blank" rel="noopener noreferrer"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#895129] text-[#FAF9F6] font-bold hover:bg-[#E08543] transition-all shadow-xl hover:scale-105 duration-200"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#16a34a] text-[#FAF9F6] font-bold hover:bg-[#22c55e] transition-all shadow-xl hover:scale-105 duration-200"
           >
             Register Your Team →
           </a>

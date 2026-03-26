@@ -43,16 +43,16 @@ const FAQItem = ({ item, index }: { item: typeof faqs[0]; index: number }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.4, delay: index * 0.06 }}
-      className="border-b border-[#663C1F] last:border-0"
+      className="border-b border-[#1e1b4b] last:border-0"
     >
       <button
         className="w-full flex items-center justify-between py-5 text-left gap-4 group"
         onClick={() => setOpen(!open)}
       >
-        <span className="text-base font-semibold text-[#FAF9F6] group-hover:text-[#E08543] transition-colors">
+        <span className="text-base font-semibold text-[#FAF9F6] group-hover:text-[#818cf8] transition-colors">
           {item.q}
         </span>
-        <span className="shrink-0 text-[#E08543]">
+        <span className="shrink-0 text-[#818cf8]">
           {open ? <Minus size={18} /> : <Plus size={18} />}
         </span>
       </button>
@@ -74,7 +74,7 @@ const FAQItem = ({ item, index }: { item: typeof faqs[0]; index: number }) => {
 
 export const FAQSection = () => {
   return (
-    <section id="faq" className="py-28 px-6 bg-[#3D2412]">
+    <section id="faq" className="py-28 px-6 bg-[#0a0a0f]">
       <div className="max-w-3xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -83,7 +83,7 @@ export const FAQSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
-          <span className="inline-block text-xs uppercase tracking-widest text-[#E08543] mb-4 font-semibold">
+          <span className="inline-block text-xs uppercase tracking-widest text-[#818cf8] mb-4 font-semibold">
             FAQ
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-[#FAF9F6] mb-4">
@@ -91,13 +91,13 @@ export const FAQSection = () => {
           </h2>
           <p className="text-[#FAF9F6]/55">
             Anything not covered here? Email us at{" "}
-            <a href="mailto:hello@gen-ai.com" className="text-[#E08543] underline">
+            <a href="mailto:hello@gen-ai.com" className="text-[#818cf8] underline">
               hello@gen-ai.com
             </a>
           </p>
         </motion.div>
 
-        <div className="rounded-2xl border border-[#663C1F] bg-[#663C1F]/10 px-6 divide-y divide-[#663C1F]">
+        <div className="rounded-2xl border border-[#1e1b4b] bg-[#1e1b4b]/10 px-6 divide-y divide-[#1e1b4b]">
           {faqs.map((faq, i) => (
             <FAQItem key={faq.q} item={faq} index={i} />
           ))}

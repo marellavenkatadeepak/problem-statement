@@ -37,7 +37,7 @@ const repos = [
 
 export const GithubSection = () => {
   return (
-    <section id="github" className="py-28 px-6" style={{ background: "linear-gradient(180deg, #2e1c0e 0%, #3D2412 100%)" }}>
+    <section id="github" className="py-28 px-6" style={{ background: "linear-gradient(180deg, #050508 0%, #0a0a0f 100%)" }}>
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -46,7 +46,7 @@ export const GithubSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
-          <span className="inline-block text-xs uppercase tracking-widest text-[#E08543] mb-4 font-semibold">
+          <span className="inline-block text-xs uppercase tracking-widest text-[#818cf8] mb-4 font-semibold">
             GitHub
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-[#FAF9F6] mb-4">
@@ -67,15 +67,15 @@ export const GithubSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="group flex gap-4 p-6 rounded-2xl border border-[#663C1F] bg-[#3D2412] hover:bg-[#663C1F]/30 hover:border-[#895129] transition-all"
+              className="group flex gap-4 p-6 rounded-2xl border border-[#1e1b4b] bg-[#0a0a0f] hover:bg-[#1e1b4b]/30 hover:border-[#4f46e5] transition-all"
             >
-              <div className="w-10 h-10 rounded-xl bg-[#895129]/15 flex items-center justify-center shrink-0 group-hover:bg-[#895129]/30 transition-all">
-                <repo.icon className="w-5 h-5 text-[#E08543]" />
+              <div className="w-10 h-10 rounded-xl bg-[#4f46e5]/15 flex items-center justify-center shrink-0 group-hover:bg-[#4f46e5]/30 transition-all">
+                <repo.icon className="w-5 h-5 text-[#818cf8]" />
               </div>
               <div>
                 <div className="flex items-center gap-2 mb-1">
-                  <p className="font-bold text-[#FAF9F6] group-hover:text-[#E08543] transition-colors">{repo.title}</p>
-                  <span className="text-xs px-2 py-0.5 rounded-full bg-[#895129]/20 text-[#E08543] border border-[#895129]/30">{repo.badge}</span>
+                  <p className="font-bold text-[#FAF9F6] group-hover:text-[#818cf8] transition-colors">{repo.title}</p>
+                  <span className="text-xs px-2 py-0.5 rounded-full bg-[#4f46e5]/20 text-[#818cf8] border border-[#4f46e5]/30">{repo.badge}</span>
                 </div>
                 <p className="text-sm text-[#FAF9F6]/55 leading-relaxed">{repo.description}</p>
               </div>
@@ -95,7 +95,7 @@ export const GithubSection = () => {
             id="github-cta"
             href="https://github.com"
             target="_blank" rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#895129] text-[#FAF9F6] font-bold hover:bg-[#E08543] transition-all shadow-xl shadow-[#895129]/20 hover:scale-105 duration-200"
+            className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#4f46e5] text-[#FAF9F6] font-bold hover:bg-[#818cf8] transition-all shadow-xl shadow-[#4f46e5]/20 hover:scale-105 duration-200"
           >
             <GitBranch className="w-5 h-5" />
             Start Building on GitHub

@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { cn } from "@/lib/utils";
 
 export const BackgroundBeams = ({ className }: { className?: string }) => {
@@ -11,12 +11,12 @@ export const BackgroundBeams = ({ className }: { className?: string }) => {
       >
         <defs>
           <radialGradient id="beamGradient1" cx="50%" cy="0%" r="80%">
-            <stop offset="0%" stopColor="#895129" stopOpacity="0.3" />
-            <stop offset="100%" stopColor="#3D2412" stopOpacity="0" />
+            <stop offset="0%" stopColor="#4f46e5" stopOpacity="0.3" />
+            <stop offset="100%" stopColor="#0a0a0f" stopOpacity="0" />
           </radialGradient>
           <radialGradient id="beamGradient2" cx="80%" cy="30%" r="60%">
-            <stop offset="0%" stopColor="#E08543" stopOpacity="0.15" />
-            <stop offset="100%" stopColor="#3D2412" stopOpacity="0" />
+            <stop offset="0%" stopColor="#818cf8" stopOpacity="0.15" />
+            <stop offset="100%" stopColor="#0a0a0f" stopOpacity="0" />
           </radialGradient>
           <filter id="blur">
             <feGaussianBlur stdDeviation="40" />
@@ -25,10 +25,10 @@ export const BackgroundBeams = ({ className }: { className?: string }) => {
         <rect width="100%" height="100%" fill="url(#beamGradient1)" />
         <rect width="100%" height="100%" fill="url(#beamGradient2)" />
         {/* Beam lines */}
-        <line x1="0" y1="0" x2="100%" y2="100%" stroke="#895129" strokeWidth="0.5" strokeOpacity="0.1" />
-        <line x1="100%" y1="0" x2="0" y2="100%" stroke="#E08543" strokeWidth="0.5" strokeOpacity="0.08" />
-        <line x1="50%" y1="0" x2="50%" y2="100%" stroke="#895129" strokeWidth="0.5" strokeOpacity="0.06" />
-        <line x1="0" y1="50%" x2="100%" y2="50%" stroke="#663C1F" strokeWidth="0.5" strokeOpacity="0.1" />
+        <line x1="0" y1="0" x2="100%" y2="100%" stroke="#4f46e5" strokeWidth="0.5" strokeOpacity="0.1" />
+        <line x1="100%" y1="0" x2="0" y2="100%" stroke="#818cf8" strokeWidth="0.5" strokeOpacity="0.08" />
+        <line x1="50%" y1="0" x2="50%" y2="100%" stroke="#4f46e5" strokeWidth="0.5" strokeOpacity="0.06" />
+        <line x1="0" y1="50%" x2="100%" y2="50%" stroke="#1e1b4b" strokeWidth="0.5" strokeOpacity="0.1" />
       </svg>
       {/* Glow orbs */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px]" />

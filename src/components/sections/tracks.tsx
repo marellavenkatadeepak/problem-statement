@@ -99,9 +99,9 @@ const tracks: Track[] = [
 ];
 
 const difficultyConfig = {
-  Flagship: { color: "text-[#E08543]", bg: "bg-[#E08543]/10 border-[#E08543]/40", label: "🏆 Flagship Track" },
-  Advanced: { color: "text-[#FAF9F6]", bg: "bg-[#895129]/10 border-[#895129]/40", label: "⚡ Advanced Track" },
-  Foundation: { color: "text-[#FAF9F6]/70", bg: "bg-[#663C1F]/20 border-[#663C1F]/40", label: "🌱 Foundation Track" },
+  Flagship: { color: "text-[#818cf8]", bg: "bg-[#818cf8]/10 border-[#818cf8]/40", label: "🏆 Flagship Track" },
+  Advanced: { color: "text-[#FAF9F6]", bg: "bg-[#4f46e5]/10 border-[#4f46e5]/40", label: "⚡ Advanced Track" },
+  Foundation: { color: "text-[#FAF9F6]/70", bg: "bg-[#1e1b4b]/20 border-[#1e1b4b]/40", label: "🌱 Foundation Track" },
 };
 
 const TrackCard = ({ track, index }: { track: Track; index: number }) => {
@@ -116,8 +116,8 @@ const TrackCard = ({ track, index }: { track: Track; index: number }) => {
       transition={{ duration: 0.4, delay: index * 0.05 }}
       className={cn(
         "rounded-2xl border p-6 cursor-pointer transition-all duration-300 group",
-        "bg-[#3D2412] hover:bg-[#4a2c17]",
-        track.difficulty === "Flagship" ? "border-[#E08543]/30 hover:border-[#E08543]/60" : "border-[#663C1F] hover:border-[#895129]"
+        "bg-[#0a0a0f] hover:bg-[#0f0f1a]",
+        track.difficulty === "Flagship" ? "border-[#818cf8]/30 hover:border-[#818cf8]/60" : "border-[#1e1b4b] hover:border-[#4f46e5]"
       )}
       onClick={() => setExpanded(!expanded)}
     >
@@ -133,12 +133,12 @@ const TrackCard = ({ track, index }: { track: Track; index: number }) => {
           >
             {cfg.label}
           </span>
-          <h3 className="text-lg font-bold text-[#FAF9F6] group-hover:text-[#E08543] transition-colors">
+          <h3 className="text-lg font-bold text-[#FAF9F6] group-hover:text-[#818cf8] transition-colors">
             {track.title}
           </h3>
           <p className="mt-2 text-sm text-[#FAF9F6]/55 leading-relaxed">{track.description}</p>
         </div>
-        <button className="shrink-0 text-[#FAF9F6]/40 hover:text-[#E08543] transition-colors mt-1">
+        <button className="shrink-0 text-[#FAF9F6]/40 hover:text-[#818cf8] transition-colors mt-1">
           {expanded ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
         </button>
       </div>
@@ -148,14 +148,14 @@ const TrackCard = ({ track, index }: { track: Track; index: number }) => {
         <motion.div
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
-          className="mt-5 pt-5 border-t border-[#663C1F] grid md:grid-cols-2 gap-4"
+          className="mt-5 pt-5 border-t border-[#1e1b4b] grid md:grid-cols-2 gap-4"
         >
-          <div className="rounded-xl bg-[#663C1F]/20 p-4">
-            <p className="text-xs uppercase text-[#E08543] font-bold tracking-widest mb-1">Expected Output</p>
+          <div className="rounded-xl bg-[#1e1b4b]/20 p-4">
+            <p className="text-xs uppercase text-[#818cf8] font-bold tracking-widest mb-1">Expected Output</p>
             <p className="text-sm text-[#FAF9F6]/70">{track.expectedOutput}</p>
           </div>
-          <div className="rounded-xl bg-[#663C1F]/20 p-4">
-            <p className="text-xs uppercase text-[#E08543] font-bold tracking-widest mb-1">Why It Matters</p>
+          <div className="rounded-xl bg-[#1e1b4b]/20 p-4">
+            <p className="text-xs uppercase text-[#818cf8] font-bold tracking-widest mb-1">Why It Matters</p>
             <p className="text-sm text-[#FAF9F6]/70">{track.whyItMatters}</p>
           </div>
         </motion.div>
@@ -172,7 +172,7 @@ export const TracksSection = () => {
   const filtered = filter === "All" ? tracks : tracks.filter((t) => t.difficulty === filter);
 
   return (
-    <section id="tracks" className="py-28 px-6" style={{ background: "linear-gradient(180deg, #3D2412 0%, #2e1c0e 100%)" }}>
+    <section id="tracks" className="py-28 px-6" style={{ background: "linear-gradient(180deg, #0a0a0f 0%, #050508 100%)" }}>
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -181,7 +181,7 @@ export const TracksSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
-          <span className="inline-block text-xs uppercase tracking-widest text-[#E08543] mb-4 font-semibold">
+          <span className="inline-block text-xs uppercase tracking-widest text-[#818cf8] mb-4 font-semibold">
             Problem Tracks
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-[#FAF9F6] mb-4">
@@ -201,8 +201,8 @@ export const TracksSection = () => {
               className={cn(
                 "px-5 py-2 rounded-full text-sm font-semibold border transition-all",
                 filter === cat
-                  ? "bg-[#895129] border-[#895129] text-[#FAF9F6]"
-                  : "border-[#663C1F] text-[#FAF9F6]/50 hover:border-[#895129] hover:text-[#FAF9F6]"
+                  ? "bg-[#4f46e5] border-[#4f46e5] text-[#FAF9F6]"
+                  : "border-[#1e1b4b] text-[#FAF9F6]/50 hover:border-[#4f46e5] hover:text-[#FAF9F6]"
               )}
             >
               {cat}
