@@ -73,12 +73,12 @@ const tracks: Track[] = [
     whyItMatters: "Retaining one customer is 5x cheaper than acquiring a new one.",
   },
   {
-    title: "Agriculture",
+    title: "Cybersecurity",
     description:
-      "Build an agentic AI system that can analyze weather, soil, and crop data to predict risks, recommend actions, and autonomously assist farmers in optimizing yield and minimizing losses through continuous adaptation.",
+      "Build an agentic AI system that can detect threats, investigate anomalies, autonomously respond to cyberattacks, and continuously evolve defense strategies by learning from new attack patterns.",
     difficulty: "Foundation",
-    expectedOutput: "A farmer-facing dashboard or app with real-time risk alerts, actionable recommendations, and adaptive planning powered by agentic AI.",
-    whyItMatters: "Agriculture feeds the world — agentic AI that helps farmers adapt to unpredictable conditions can prevent crop losses and improve food security.",
+    expectedOutput: "A threat detection and response system with autonomous investigation, real-time alerts, and adaptive defense strategies powered by agentic AI.",
+    whyItMatters: "Cyberattacks are growing in scale and sophistication — agentic AI that continuously learns and adapts can stay ahead of threats and protect critical systems.",
   },
   {
     title: "Form Filler",
